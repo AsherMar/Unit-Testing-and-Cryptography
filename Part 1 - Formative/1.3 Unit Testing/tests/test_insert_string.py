@@ -13,7 +13,7 @@ class TestInsertString(TestCase):
         self.assertEqual(insert_string("apple", "ORANGE"), "apORANGEple")
 
     def test_insert_string_empty_insert(self):
-        self.assertEqual(insert_string("apple", ""), "apple")
+    self.assertEqual(insert_string("apple", ""), "apple")
 
     def test_insert_string_empty_text(self):
         self.assertEqual(insert_string("", "orange"), "orange")

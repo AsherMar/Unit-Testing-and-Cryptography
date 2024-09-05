@@ -1,14 +1,22 @@
 # Read the instructions to see what you need to do here!
 
 alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
+#       "WJKUXVBMIYDTPLHZGONCRSAEFQ"
 
 def sub_encode(text, codebet):
-    return ""
+    new_str = ""
+    for let in text:
+        index = alpha.find(let)
+        new_str += codebet[index]
+    return new_str
 
 
 def sub_decode(text, codebet):
-    return ""
+    new_str = ""
+    for let in text:
+        index = codebet.find(let)
+        new_str += alpha[index]
+    return new_str
 
 
 test = "HELLOWORLD"
