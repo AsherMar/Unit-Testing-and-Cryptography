@@ -9,3 +9,6 @@ class TestCaesarShift(TestCase):
 
     def test_insert_lowercase(self):
         self.assertEqual(caesar_encode('helloworld', 5), 'mjqqtbtwqi')
+
+    def test_insert_space_lowercase(self):
+        self.assertEqual(caesar_encode('hello world', 5), 'mjqqt btwqi')
