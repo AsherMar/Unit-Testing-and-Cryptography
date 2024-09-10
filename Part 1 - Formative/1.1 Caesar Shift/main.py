@@ -9,10 +9,13 @@ def caesar_encode(text, n):
             index = alpha.index(let)
             new_str += alpha[(index + n) % 26]
         if text == text.lower():
+            if let not in alpha_l:
+                new_str += let
+            else:
             index2 = alpha_l.index(let)
             new_str += alpha_l[(index2 + n) % 26]
-            if " " in text:
-                space = text.find(" ", index2)
+        if let not in alpha or alpha_l:
+            new_str += let
 
     return new_str
 
