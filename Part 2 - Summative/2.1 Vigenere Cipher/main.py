@@ -15,6 +15,8 @@ def vig_encode(text, keyword):
     index3 = index + index2
     if index3 > len(alpha):
       index3 %= len(alpha)
+      new_str += alpha[index3]
+  print(new_str)
 
 def vig_decode(text, keyword):
   return ""

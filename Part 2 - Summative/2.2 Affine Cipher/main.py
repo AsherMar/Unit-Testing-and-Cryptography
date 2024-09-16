@@ -1,7 +1,5 @@
 import math
 
-# Read the instructions to see what to do!
-
 alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 # PART 1
