@@ -13,10 +13,10 @@ def vig_encode(text, keyword):
   for letter in text:
     index = alpha.find(letter)
     index3 = index + index2
-    if index3 > len(alpha):
+    if index3 > 26:
       new_str += alpha[index3 % 26]
-  return new_str
   move = 0
+  return new_str
 
 def vig_decode(text, keyword):
   global index2
@@ -30,10 +30,10 @@ def vig_decode(text, keyword):
   for letter in text:
     index = alpha.find(letter)
     index3 = index + index2
-    if index3 > len(alpha):
-      new_str += alpha(index3 % 26)
-  return new_str
+    if index3 > 26:
+      new_str += alpha[index3 % 26]
   move = 0
+  return new_str
 
 test = "THEQUICKBROWNFOXJUMPEDOVERTHELAZYDOG"
 vig_key = "TEST"
